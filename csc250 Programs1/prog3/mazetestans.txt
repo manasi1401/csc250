@@ -1,0 +1,219 @@
+Maze 1:
+	Size: 16x10
+	Start Loc: 1 1
+	Shortest Path: 24
+
+	**********
+	*-       *
+	*=**LL** *
+	*---LL   *
+	* *-LL* **
+	*LL------*
+	*L* ****-*
+	*       -*
+	*       -*
+	*W**LL**-*
+	*   LL --*
+	* * LL*-**
+	*LL    --*
+	*L* ****-*
+	*      E-*
+	**********
+//Simple maze. To check if it works and counts accurately
+Maze 2:
+	Size: 9x20
+	Start Loc: 1 1
+	Shortest Path: 21
+
+	********************
+	*=-------**        *
+	*W**LL**-**W**LL** *
+	*   LL  ------LL   *
+	* * LL* *** *-LL* **
+	* L        LL-     *
+	*L* **** **L*-**** *
+	*        **  ---E  *
+	********************
+//to check whether it counts the intial step or not. If it starts in water it shouldn't count that step.
+Maze 3:
+	Size: 16x10
+	Start Loc: 1 1
+	Shortest Path: 19
+
+	**********
+	*-       *
+	*-**  ** *
+	*-       *
+	*-*   * **
+	*-       *
+	*-* **** *
+	*-       *
+	*-       *
+	*-**  ** *
+	*---     *
+	* *-  * **
+	*  -     *
+	* *-**** *
+	** ----E *
+	**********
+//traverse a blank maze
+Maze 4:
+	Size: 23x30
+	Start Loc: 1 1
+	Shortest Path: 49
+
+	******************************
+	*----------------------------*
+	*W**LL**W**W**LL**W**W**WW**=*
+	*   LL        LL    *       -*
+	* * LL* *** * LL* *** *   * -*
+	*LL        LL      WWWWWW   -*
+	*L* **** **L* **** ** * ****-*
+	*  ****W ** * *W**      LLLW-*
+	*        **   *    **       -*
+	*W**LL** **W**LL**  * * LL* -*
+	*   LL        LL   **LL     -*
+	* * LL* *** * LL* *  W**LL**-*
+	*LL        LL         *   * -*
+	*L* **** **L* **** ** **  **-*
+	* WWW    **          W**LL**-*
+	*     WW **   ***W ** **  **-*
+	*W**LL** **W**LL** **W**LL**-*
+	*   LL        LL    *  *    -*
+	* * LL* *** * LL* * *       -*
+	*LL        LL      **LL ****-*
+	*L* **** **L* ****      ****-*
+	*        **        ***     E-*
+	******************************
+//mltiple paths and all have to traverse water
+Maze 5:
+	Size: 43x30
+	Start Loc: 1 1
+	Shortest Path: 61
+
+	******************************
+	*--------    L           LL  *
+	*W**LL**-**W**LL** ** **  ** *
+	*   LL  ------LL    *   LL  L*
+	* * LL*L*** *-LL* *** *  W*  *
+	*LLL       LL-  L            *
+	*L* **** **L*-**** ** * **** *
+	*    WW  **  -LL    *    **  *
+	*  WWWWWW**  ----=-**  LLL   *
+	*W**LL** **W**LL**- * * LL*  *
+	*   LL        LL  -**LL      *
+	* * LL* *** * LL* -*LW**LL** *
+	*LL        LL     -L  *   *  *
+	*L* **** **L* ****-** **  ****
+	*   L  ****   *** -  W**LL** *
+	*    L   **   L   -** **  ** *
+	*W**LL** **W**LL**-**W**LL** *
+	*   LL   L    LL  - *  *     *
+	* * LL* *** * LL* -L*    *   *
+	*LL        LL    L-**LL  W** *
+	*L* **** **L* ****-L W  ** L *
+	*               LL-L         *
+	*W**LL** **W**LL**-** **  ** *
+	*   LL        LL  - *   LL   *
+	* * LL* *** * LL**-** *   *  *
+	*LL        LLLL   -L         *
+	*L* **** **L* ****-** * **** *
+	*    WW  **  LLLL - *    **  *
+	* WLLLLW **   L   -**   LLLLL*
+	*W**LL** **W**LL**- * * LL*  *
+	*   LL        LL  -**LL      *
+	* * LL* *** * LL* -LLW**LL** *
+	*LL      L LLLLL  -L  *   *  *
+	*L* **** **L* ****-**L**  ****
+	*   L  ****L L*** -  W**LL** *
+	* WWWWWWW** L   LW=** **  ** *
+	*W**LL** **W**LL**-**W**LL** *
+	*   LL   L L  LL L--*  *    L*
+	* * LL* *** * LL** -* L  *   *
+	*LL        LLL    L-*LL   ** *
+	*L* **** **L*L****L--E  **   *
+	*        **       L***       *
+	******************************
+// A very big maze. Check if it traverses through water
+
+Maze 6:
+	Size: 75x30
+	Start Loc: 1 1
+	Shortest Path: 58
+
+	******************************
+	*--------    L           LL  *
+	* **LL**-**W**LL** ** **  ** *
+	*   LL  ----  LL    *   LL  L*
+	* * LL*L***-*LLL* *** *  W*  *
+	*LLL       ---  L            *
+	*L* **** **L*-****L** * **** *
+	*    WW  **  -LL    *    **  *
+	*  WWWWWW**  ----=-**  LLL   *
+	*W**LL** **L**LL**- * * LL*  *
+	*   LL        LL  -**LL      *
+	* * LL* *** * LL* -*LW**LL** *
+	*LL        LLL    -L  *   *  *
+	*L* **** **L* ****-** **  ****
+	*   L  ****   *** -  W**LL** *
+	*    L   **   L   -** **  ** *
+	*W**LL** **W**LL**-**W**LL** *
+	*   LL   L    LL  - *  *     *
+	* * LL* *** * LL* -L*    *   *
+	*LL        LL    L-**LL  W** *
+	*L* **** **L* ****-L W  ** L *
+	*               L -L         *
+	*W**LL** **W**LL**-** **  ** *
+	*   LL        LL  - *   LL   *
+	* * LL* *** * LL**-** *   *  *
+	*LL        LLLL   -L         *
+	*L* **** **L* ****-** * **** *
+	*    WW  **  LLLL - *    **  *
+	* WLLLLW **       -**   LLLLL*
+	*W**LL** **W**LL**- * * LL*  *
+	*   LL        LL  -**LL      *
+	* * LL* *** * LL* -LLW**LL** *
+	*LL      L LLLLL  -L  *   *  *
+	*L* **** **L* ****-**L**  ****
+	*   L  ****L L****-  W**LL** *
+	* WWWWWWW** L    W=** **  ** *
+	*W**LL** **W**LL**-**W**LL** *
+	*   LL   L L  LL L--*  *    L*
+	* * LL* *** * LL** -* L  *   *
+	*LL        LLL    LE*LL   ** *
+	*L* **** **L*L****  L   **   *
+	*        **  LL**  ***       *
+	*   LL        LL*  **LL      *
+	* * LL* *** * LL*  *LW**LL** *
+	*LL        LLL     L  *   *  *
+	*L* **** **L* **** **L**  ****
+	*   L  ****   ***   LW**LL** *
+	*    L   **   LLL  ** **  ** *
+	*W**LL** **W**LL** **W**LL** *
+	*   LL   L    LL    *  *     *
+	* * LL* *** * LL*  L*    *   *
+	*LL        LL    L **LL  W** *
+	*L* **** **L* **** L W  ** L *
+	*               LL L         *
+	*W**LL** **W**LL** ** **  ** *
+	*   LL        LL** **   LL   *
+	* * LL* *** * LL** ** *   *  *
+	*LL        LLLL  * L         *
+	*L* **** **L* **** ** * **** *
+	*    WW  **  LLLL   *    **  *
+	* WLLLLW **   L    **   LLLLL*
+	*W**LL** **W**LL**  * * LL*  *
+	*   LL        LL   **LL      *
+	* * LL* *** * LL*  LLW**LL** *
+	*LL      L LLLLL   L  *   *  *
+	*L* **** **L* **** **L**  ****
+	*   L  ****L L***   LW**LL** *
+	* WWWWWWW** L   LWW** **  ** *
+	*W**LL** **W**LL** **W**LL** *
+	*   LL   L L  LL L  *  *    L*
+	* * LL* *** * LL**  * L  *   *
+	*LL        LLL    L *LL   ** *
+	*L* **** **L*L****L     **   *
+	*        **       L***       *
+	******************************
+//A veyr big maze and check if it reads in everything. traverses the maze successfully.
